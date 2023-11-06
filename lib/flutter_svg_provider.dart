@@ -2,7 +2,7 @@ library flutter_svg_provider;
 
 import 'dart:io';
 import 'dart:async';
-import 'dart:ui' as ui show Image, Picture;
+import 'dart:ui' as ui show Image;
 
 import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart';
@@ -13,7 +13,7 @@ import 'package:flutter/services.dart' show rootBundle;
 /// Get svg string.
 typedef SvgStringGetter = Future<String?> Function(SvgImageKey key);
 
-/// An [Enum] of the possible image path sources.
+/// An [SvgSource] of the possible image path sources.
 enum SvgSource {
   file,
   asset,
